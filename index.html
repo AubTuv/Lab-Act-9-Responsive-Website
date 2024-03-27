@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Love Language Survey</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        font-family: "Georgia";
+        background-image: url(http://s1.bwallpapers.com/wallpapers/2014/01/20/roses-backgrounds_111123365.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 20px;
+      }
+
+      .container {
+        background-color: #FFE6D9;
+        border-radius: 10px;
+        padding: 30px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 30px;
+        font-family: "Edwardian Script ITC";
+        font-size: 500%;
+        color: #F02943;
+      }
+
+      label {
+        font-weight: bold;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      button {
+        width: 100%;
+      }
+
+      @media (min-width: 576px) {
+        .container {
+          max-width: 500px;
+          margin: 0 auto;
+        }
+      }
+
+      @media (min-width: 768px) {
+        .container {
+          max-width: 700px;
+        }
+      }
+      .form-control {
+        background-color: #f4aba4;
+      }
+      p {
+        text-align: center;
+      }
+      .form-control {
+        background-color: white;
+      }
+
+      .form-control:focus {
+        border-color: #dc4453 !important;
+        box-shadow: 0 0 0 0.2rem rgba(220, 68, 83, 0.25) !important;
+      }
+      .btn-primary:focus {
+        border-color: #dc4453 !important;
+        box-shadow: 0 0 0 0.2rem rgba(220, 68, 83, 0.25) !important;
+      }
+      h5 {
+        text-align: center;
+      }
+      #loveLanguageResult{
+        text-align: center;
+        margin-bottom: 30px;
+        font-family: "Edwardian Script ITC";
+        font-size: 500%;
+        color: #F02943;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Love Language Survey</h1>
+      <p>
+        Unlock the secrets to deeper connections in your relationships! <br />
+        Take our quick survey to discover your primary love language. Find out
+        how you prefer to give and receive love. Enhance your understanding of
+        yourself and your loved ones. <br />Begin the journey to stronger, more
+        fulfilling relationships now!
+<br />
+        <hr>
+      </p>
+      <form id="surveyForm">
+        <div class="form-group">
+          <label
+            >When someone close to you praises you or expresses appreciation,
+            how does it make you feel?</label
+          >
+          <select class="form-control" name="praise_feel">
+            <option value="1">I don't mind hearing it or not</option>
+            <option value="2">It's nice to hear it at times</option>
+            <option value="3">I like hearing it</option>
+            <option value="4">I would love to hear it</option>
+            <option value="5">I NEED to hear it</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label
+            >How important is spending focused, one-on-one time with your loved
+            ones to you?</label
+          >
+          <select class="form-control" name="praise_feel">
+            <option value="1">
+              I don't really mind it when they can't spend time with me
+            </option>
+            <option value="2">One-on-one timetime is VERY important</option>
+            <option value="3">I would hate it if they're to busy for it</option>
+            <option value="4">
+              I think it is important but I also respect their time
+            </option>
+            <option value="5">One-on-one is a must</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label
+            >How do you feel when someone surprises you with a thoughtful
+            gift?</label
+          >
+          <select class="form-control" name="praise_feel">
+            <option value="1">
+              It's fine if they do it's fine if they don't
+            </option>
+            <option value="2">
+              It's ok to not receive one but it would make me happy if they do
+            </option>
+            <option value="3">
+              I would be ecstatic if they do give me a gift
+            </option>
+            <option value="4">I would really appreciate it if they do</option>
+            <option value="5">It would make me happy</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label
+            >When someone helps you with tasks or chores, how much does it mean
+            to you?</label
+          >
+          <select class="form-control" name="praise_feel">
+            <option value="1">I would really find it very helpful</option>
+            <option value="2">
+              I would appreciate it since they are giving me their time
+            </option>
+            <option value="3">I don't really mind it</option>
+            <option value="4">
+              It woud make me happy but only if they're free to do so
+            </option>
+            <option value="5">I would be extremely grateful</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label
+            >How comfortable are you with physical displays of affection, such
+            as hugs or holding hands?</label
+          >
+          <select class="form-control" name="praise_feel">
+            <option value="1">I would be completely comfortable with it</option>
+            <option value="2">I'm fine with it</option>
+            <option value="3">I'm not really much of a physical person</option>
+            <option value="4">I wouldn't mind it much</option>
+            <option value="5">I'm really into it</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label
+            >What do you appreciate most when you're feeling down or
+            stressed?</label
+          >
+          <select class="form-control" name="praise_feel">
+            <option value="1">
+              Someone helping me with the tasks or responsibilities makes me
+              feel appreciated
+            </option>
+            <option value="2">
+              Spending quality time with someone would make me feel loved
+            </option>
+            <option value="3">
+              Hearing encouraging words and support is my love language
+            </option>
+            <option value="4">
+              I would feel loved if I received a thoughtful gift or gesture from
+              them
+            </option>
+            <option value="5">
+              A hug or touch or any physical contact would make me feel
+              appreciated
+            </option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label
+            >In a relationship, which gesture makes you feel the most loved and
+            appreciated?</label
+          >
+          <select class="form-control" name="praise_feel">
+            <option value="1">Acts of service and assistance</option>
+            <option value="2">Quality time spent together</option>
+            <option value="3">Compliments and expressions of love</option>
+            <option value="4">Thoughtful gifts or surprises</option>
+            <option value="5">Physical affection and closeness</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label
+            >When you think of feeling loved, which scenario resonates with you
+            the most?</label
+          >
+          <select class="form-control" name="praise_feel">
+            <option value="1">
+              Having someone assist with tasks or responsibilities
+            </option>
+            <option value="2">
+              Sharing meaningful experiences and conversations
+            </option>
+            <option value="3">
+              Receiving heartfelt compliments and appreciation
+            </option>
+            <option value="4">Receiving surprises or thoughtful gifts</option>
+            <option value="5">Feeling physical closeness and affection</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label
+            >Which gesture from a loved one would brighten your day the
+            most?</label
+          >
+          <select class="form-control" name="praise_feel">
+            <option value="1">Taking care of chores or tasks for you</option>
+            <option value="2">
+              Planning a special outing or activity together
+            </option>
+            <option value="3">Writing you a heartfelt note or message</option>
+            <option value="4">Surprising you with a thoughtful gift</option>
+            <option value="5">Offering a warm hug or holding your hand</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label    
+            >Reflecting on your past experiences, what type of affection or
+            appreciation resonates with you the most?</label
+          >
+          <select class="form-control" name="praise_feel">
+            <option value="1">Acts of service and assistance</option>
+            <option value="2">Shared moments and quality time together</option>
+            <option value="3">
+              Verbal affirmations and expressions of love
+            </option>
+            <option value="4">Meaningful gifts and surprises </option></option>
+            <option value="5">Physical touch and closeness</option>
+          </select>
+        </div>
+
+        <button
+          type="submit"
+          class="btn btn-primary"
+          style="background-color: #dc4453; border-color: #f29083"
+          onmouseover="this.style.backgroundColor='#F3ADA6'; this.style.borderColor='white';"
+          onmouseleave="this.style.backgroundColor='#dc4453'; this.style.borderColor='#f29083';"
+        >
+          Submit
+        </button>
+      </form>
+      <div id="resultCard" class="card mt-3 d-none">
+      <div class="card-body">
+        <h5 class="card-title">Your Love Language</h5>
+        <p class="card-text" id="loveLanguageResult"></p>
+        <p class="card-text" id="loveLanguageDesc"></p>
+      </div>
+    </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+  function calculateLoveLanguage() {
+    var points = {
+      "Acts of Service": 0,
+      "Quality Time": 0,
+      "Words of Affirmation": 0,
+      "Receiving Gifts": 0,
+      "Physical Touch": 0,
+    };
+
+    var selects = document.querySelectorAll("select");
+
+    selects.forEach(function (select) {
+      var selectedOption = select.options[select.selectedIndex].value;
+
+      switch (selectedOption) {
+        case "1":
+          points["Acts of Service"] += 1;
+          break;
+        case "2":
+          points["Quality Time"] += 2;
+          break;
+        case "3":
+          points["Words of Affirmation"] += 3;
+          break;
+        case "4":
+          points["Receiving Gifts"] += 4;
+          break;
+        case "5":
+          points["Physical Touch"] += 5;
+          break;
+      }
+    });
+
+    var primaryLoveLanguage = Object.keys(points).reduce(function (a, b) {
+      return points[a] > points[b] ? a : b;
+    });
+
+    document.getElementById("loveLanguageResult").textContent = primaryLoveLanguage;
+
+    // Set different descriptions for love language result and description
+    var loveLanguageDesc = document.getElementById("loveLanguageDesc");
+    switch (primaryLoveLanguage) {
+      case "Acts of Service":
+        loveLanguageDesc.textContent = "Individuals who appreciate when others help them with tasks or responsibilities, showing they care through actions.";
+        break;
+      case "Quality Time":
+        loveLanguageDesc.textContent = "Those who feel most loved when they receive undivided attention and spend meaningful time with loved ones.";
+        break;
+      case "Words of Affirmation":
+        loveLanguageDesc.textContent = "Individuals who value verbal affirmations and expressions of love. They appreciate compliments, encouragement, and hearing 'I love yous.'";
+        break;
+      case "Receiving Gifts":
+        loveLanguageDesc.textContent = "People who feel loved when they receive thoughtful presents or gestures that show someone has been thinking of them.";
+        break;
+      case "Physical Touch":
+        loveLanguageDesc.textContent = "Those who feel most loved through physical displays of affection, such as hugs, kisses, or holding hands.";
+        break;
+    }
+
+    document.getElementById("resultCard").classList.remove("d-none");
+  }
+
+  document.getElementById("surveyForm").addEventListener("submit", function (event) {
+    event.preventDefault();
+    calculateLoveLanguage();
+  });
+</script>
+  </body>
+</html>
